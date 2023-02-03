@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>my-first-web-app-hu</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="az-első-webalkalmazásom">Az első webalkalmazásom</h1>
+<p>Ezen a héten egy kisebb webes alkalmazáson fogsz dolgozni ami egy képgalériához hasonlóan fog működni, vagyis képeket fog megjeleníteni a címükkel és leírásukkal. Lejjebb találsz egy részletes leírást ami elmondja hogyan kell működnie az alkalmazásnak kész állapotában. A bonyolultabb funkciókat kihagyhatod ha gondolod és majd később visszatérhetsz ezekhez. Illetve csináltunk neked egy napokra lebontott tervet is ami segíthet abban, hogy hogyan érdemes haladni. Viszont ez csak egy javaslat, ha úgy érzed akkor nyugodtan térj el tőle.</p>
+<h2 id="látványterv">Látványterv</h2>
+<figure>
+<img src="https://mfanorth.z16.web.core.windows.net/syllabus/week03/assets/slider.png" alt="Gallery mockup"><figcaption aria-hidden="true">Gallery mockup</figcaption>
+</figure>
+<h2 id="specifikáció">Specifikáció</h2>
+<h3 id="mielőtt-még-elkezded">Mielőtt még elkezded</h3>
+<ul>
+<li>Fejben tervezd meg mit is akarsz csinálni</li>
+<li>Készíts sketch-upokat amik majd segítenek a HTML és CSS megírásában</li>
+<li>Tervezd meg az adatstruktúrát(data structure) amiben tárolni fogod a szükséges adatokat JavaScript oldalon</li>
+<li>Gondolkodj egy kicsit, hogy mik azok amiket több helyen is fel tudsz használni és tervezz nekik függvényeket és változókat</li>
+<li>Gondold át mik lesznek a user eventek amiket le kell kezelned</li>
+</ul>
+<h3 id="vázlat-és-működés">Vázlat és működés</h3>
+<ul>
+<li>Nyugodtan változtass a designon ha szeretnél, de fontos, hogy jól nézzen ki</li>
+<li>A szerkezet a képernyő közepén helyezkedjen el és fix mérete legyen</li>
+<li>A galéria két fő részből áll. Az egyik ahol nagyban látszik egy kép, illetve alul a thumbnailek(indexképek)</li>
+<li>A felső rész tartalmaz két gombot nyilakkal az oldalakon, illetve középen az aktuálisan kiválasztott képet.</li>
+<li>Alul jelenjenek meg a thumbnailek, vagyis az összes kép kisméretben</li>
+<li>Az aktuálisan kiválasztott kép alján egy félig átlátszó blokk helyezkedik el ami tartalmazza a kép címét és leírását</li>
+</ul>
+<h3 id="navigáció-és-interakció">Navigáció és interakció</h3>
+<ul>
+<li>Mikor először megnyitjuk az oldalt, az eltárolt képek közül az első jelenik meg nagyban</li>
+<li>Az ehhez tartozó thumbnail(ami az első) pedig aktív(outline, border, stb…)</li>
+<li>Mikor rákattintunk a nyilakra, a középen lévő nagy kép(és az ehhez tartozó cím és leírás) átvált a következőre vagy az előzőre a gombtól függően</li>
+<li>Ugyanekkor az éppen aktív thumbnail is változik az aktuálisan kiválasztott kép alapján</li>
+<li>Ha épp a legelső kép van kiválasztva, akkor a visszafele nyílra kattintáskor az utolsó kerül kiválasztásra</li>
+<li>Hasonlóan, ha az utolsó kép az aktív, akkor az előre nyílra kattintáskor az első kép kerül kiválasztásra</li>
+<li>Bármelyik thumbnailre kattintáskor az adott kép kerül kiválasztásra</li>
+<li>A nyilak hatása, az éppen megjelenített nagy kép és az aktív thumbnail mindig legyenek egymással szinkronban</li>
+</ul>
+<h2 id="terv-napokra-lebontva">Terv napokra lebontva</h2>
+<h3 id="első-nap">Első nap</h3>
+<ul>
+<li>Készíts egy folder a projectednek</li>
+<li>Hozd létre a HTML, CSS és JavaScript fájlokat és kösd össze őket egymással</li>
+<li>Töltsd be a jQuery-t is a HTML-ben</li>
+<li>Készíts egy <code>images</code> foldert és helyezz bele néhány képet amiket majd megjelenítesz a galériádban</li>
+<li>Készítsd el azt a részt a HTML-ben ahol nagyban jelenik meg kép egyelőre egy darab képpel, majd csináld meg a CSS részt is hozzá(A thumbnailekkel egyelőre még ne foglalkozz, az később jön)</li>
+<li>A nyilakhoz <a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/assets/arrow.svg">itt találsz egy képet</a> amit letölthetsz és használhatsz
+<ul>
+<li>Ezt meg lehet tükrözni <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">CSS segítségével</a> a másik oldalhoz</li>
+</ul></li>
+</ul>
+<h3 id="második-nap">Második nap</h3>
+<ul>
+<li>Szedd ki a képet(az <code>src</code> attribútumot az <code>img</code> tagből) és a szöveget a cím és leírás HTML tagekből és adj a tagekhez id-kat ha eddig még nem tetted meg</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span><span class="ot"> id=</span><span class="st">"photo"</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">"gray-container"</span><span class="kw">&gt;</span></span>
+<span id="cb1-3"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;h1</span><span class="ot"> id=</span><span class="st">"photo-title"</span><span class="kw">&gt;&lt;/h1&gt;</span></span>
+<span id="cb1-4"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">"photo-description"</span><span class="kw">&gt;&lt;/p&gt;</span></span>
+<span id="cb1-5"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<ul>
+<li>Tedd őket egy JavaScript objectbe aminek 3 fieldje van (<code>photo</code>, <code>title</code>, <code>desciption</code>)</li>
+<li>jQuery segítségével töltsd be a képet és a szöveget a megfelelő helyre a HTML-ben</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> data <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">photo</span><span class="op">:</span> <span class="st">'images/photo1.jpg'</span><span class="op">,</span></span>
+<span id="cb2-3"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="st">'My title'</span><span class="op">,</span></span>
+<span id="cb2-4"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">description</span><span class="op">:</span> <span class="st">'What happened here, why is this a very nice image'</span></span>
+<span id="cb2-5"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-5" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb2-6"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">$</span>(<span class="st">'#photo'</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">'src'</span><span class="op">,</span> data<span class="op">.</span><span class="at">photo</span>)<span class="op">;</span></span>
+<span id="cb2-8"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">// ...</span></span></code></pre></div>
+<ul>
+<li>Készíts egy arrayt amibe tegyél egy a fentihez hasonló objectet minden képhez ami az <code>images</code> folderben található</li>
+<li>Hozz létre egy változót (pl. <code>currentPhoto</code>) amiben eltárolod az aktuálisan megjelenített kép indexét (ez kezdetben lehet <code>0</code>)</li>
+<li>Amikor szükséged van adatra az arrayből, használd a <code>currentPhoto</code> változódat indexként</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> currentPhoto <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> imagesData <span class="op">=</span> [<span class="op">...</span>]<span class="op">;</span></span>
+<span id="cb3-3"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">$</span>(<span class="st">'#photo'</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">'src'</span><span class="op">,</span> imagesData[currentPhoto]<span class="op">.</span><span class="at">photo</span>)<span class="op">;</span></span>
+<span id="cb3-4"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">// ...</span></span></code></pre></div>
+<h3 id="harmadik-nap">Harmadik nap</h3>
+<ul>
+<li>Azt a kódot ami a jQuerz segítségével betölt egy képet, tedd egy olyan függvénybe ahol a kép indexe az input</li>
+<li>Ezt a függvényt <code>0</code>-val hívd meg az oldal betöltésekor, majd a nyilakra kattintáskor változtasd a <code>currentPhoto</code> változó értékét és ezt a változót add meg a függvénynek inputként</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb4-1"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> loadPhoto <span class="op">=</span> (photoNumber) <span class="kw">=&gt;</span> {</span>
+<span id="cb4-2"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">$</span>(<span class="st">'#photo'</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">'src'</span><span class="op">,</span> imagesData[photoNumber]<span class="op">.</span><span class="at">photo</span>)<span class="op">;</span></span>
+<span id="cb4-3"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">// ...</span></span>
+<span id="cb4-4"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-5"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">loadPhoto</span>(currentPhoto)<span class="op">;</span></span>
+<span id="cb4-7"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">$</span>(<span class="st">'#right-arrow'</span>)<span class="op">.</span><span class="fu">click</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb4-9"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-9" aria-hidden="true" tabindex="-1"></a>  currentPhoto<span class="op">++;</span></span>
+<span id="cb4-10"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">loadPhoto</span>(currentPhoto)<span class="op">;</span></span>
+<span id="cb4-11"><a href="https://mfanorth.z16.web.core.windows.net/syllabus/week03/my-first-web-app.hu.html#cb4-11" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<ul>
+<li>Biztosítsd, hogy a <code>currentPhoto</code> változó értéke nem lehet nagyobb mint az array mérete amiben az adatok vannak, illetve nem lehet kisebb mint 0</li>
+<li><a href="https://codepen.io/adamgyulavari/pen/OJyMGXj?editors=1010" target="_blank">Kis segítség</a></li>
+</ul>
+<h3 id="negyedik-nap">Negyedik nap</h3>
+<ul>
+<li>Készítsd el a keretet amiben a thumbnailek lesznek</li>
+<li>Tegyél bele egy-két thumbnailt HTML-ben és formázd meg őket CSS segítségével</li>
+<li>Egyelőre csak a thumbnailekkel foglalkozz, a szöveggel ami akkor jelenik meg mikor a kurzor felette van ráérsz később</li>
+<li>Hozd létre a thumbnaileket JavaScriptben. Használd a <code>forEach</code> functiont az arrayen amiben a képeket tárolod</li>
+<li>Implementálj egy függvényt ami lekezeli a thumbnailekre történő kattintásokat</li>
+<li>Tudnod kell, hogy melyik thumbnailre történt a kattintás
+<ul>
+<li>A legegyszerűbb ha ezt az információt a HTML tagekbe helyezed amikor létrehozod őket</li>
+<li>Általánosságban bármilyen egyedi információt el tudsz tárolni a tagekben ha a <code>data-</code> kezdetű attribútumokat használod. Pl: <code>data-number="1"</code></li>
+<li>Ezt később el tudod érni a következőképpen: <code>$(event.target).attr('data-number')</code></li>
+<li><a href="https://codepen.io/adamgyulavari/pen/XWmXGvO?editors=1010" target="_blank">Kis segítség</a></li>
+</ul></li>
+</ul>
+<h3 id="ötödik-nap">Ötödik nap</h3>
+<ul>
+<li>Látszódjon, hogy melyik thumbnail aktív (egészítsd ki a <code>loadPhoto</code> függvényedet)</li>
+<li>Készítsd el a szöveget ami megjelenik amikor a thumbnail felett van a kurzor</li>
+<li>Ezt például megtehet úgy, hogy létrehozod és pozícionálod a szükséges HTML taget, de alapból rejtve van és csak akkor látszik ha a kurzor az adott thumbnail felett van
+<ul>
+<li><a href="https://codepen.io/adamgyulavari/pen/QWjyjwd" target="_blank">Kis segítség</a></li>
+</ul></li>
+<li>Add anything else you’d like :)</li>
+</ul>
+<h2 id="merre-tovább">Merre tovább?</h2>
+<p>Megpróbálkozhatsz különböző feladatokkal hasonló témakörben és tovább is haladhatsz a <a href="https://www.freecodecamp.org/learn">Freecodecamp</a> oldalon.</p>
+<p>Rengeteg tananyag megtalálható feladatokkal együtt a <a href="https://www.codecademy.com/">Codecadamy</a> oldalán.</p>
+<p>Egy nagyon szuper kurzus elérhető ami a jQuery alapoktól indul itt: <a href="https://repl.it/community/classrooms/20705">Repl.it</a>.</p>
+<p>Nem utolsó sorban pedig jelentkezhetsz a hosszabb karrierváltó kurzusaink egyikére:</p>
+<ul>
+<li><a href="https://www.greenfoxacademy.com/online-junior-programozo-kepzeseink">Online junior programozó képzés</a></li>
+</ul>
+
+
+</body></html>
